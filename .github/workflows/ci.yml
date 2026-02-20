@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: extractions/setup-just@v3
+    - run: just run-core
+
+  fusion:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: extractions/setup-just@v3
+    - run: just run-fusion
+
