@@ -1,0 +1,15 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'file_path/database_name.duckdb'
+      extensions:
+        - httpfs
+        - parquet
+      settings:
+        s3_region: my-aws-region
+        s3_access_key_id: key
+        s3_secret_access_key: aaa
+
+
