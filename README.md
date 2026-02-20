@@ -12,3 +12,4 @@ Using [just](https://just.systems/) to run the [Justfile](Justfile) commands, it
 - `just run-fusion` (see github [workflow run](https://github.com/fornwall/dbt-fusion-issues/actions/runs/22220818612/job/64275526039)) logs the following warning, which AFAIK is a dbt fusion bug:
   - `warning: dbt1005: Package dependency '../../../dbt-utils-1.3.3' not found in package-lock.yml. Skipping. Run 'fs deps --upgrade' with a packages.yml to resolve all dependencies.`
  
+Issue: https://github.com/dbt-labs/dbt-fusion/issues/1337
